@@ -1,0 +1,24 @@
+1) PROJECT STRUCTURE
+demo_vnexpress/
+    scrapy.cfg            # deploy configuration file
+
+    demo_vnexpress/       # project's Python module, you'll import your code from here
+        __init__.py
+
+        items.py          # project items definition file
+
+        middlewares.py    # project middlewares file
+
+        pipelines.py      # project pipelines file
+
+        settings.py       # project settings file
+
+        spiders/          # IMPORTANT! a directory where you'll later put your spiders
+            __init__.py
+
+
+
+**SPIDERS (crawler) được Scrapy sử dụng để thu thập dữ liệu**
+**Các Spiders được định nghĩa trong file <spider_name>.py nằm trong thư mục spiders**
+**Các Spiders phải là lớp con (subclass) của scrapy.Spider
+
