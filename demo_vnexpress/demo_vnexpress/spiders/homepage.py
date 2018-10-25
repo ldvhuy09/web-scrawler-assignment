@@ -14,6 +14,9 @@ class HomePageSpider(scrapy.Spider):
         #sau khi thực hiện request, scrapy sẽ nhận được response
         #sau đó gọi callback function -> self.parse để thực hiện
         #parse response
+        f1 = open('body.html', 'wb')
+        f1.write(response.body)
+        f1.close()
         f = open('result.txt', 'w')
         #newses = response.xpath('//div[@class="sub_featured"]').extract()
         #newses =  response.xpath('//div[contains(@class, "sub_featured")]/ul/li/a/text()').extract()
