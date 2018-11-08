@@ -7,7 +7,7 @@
 
 import scrapy
 
-class DatabloggerScraperItem(scrapy.Item):
+class PageSraperItem(scrapy.Item):
     # The source URL
     url_from = scrapy.Field()
     # The destination URL
